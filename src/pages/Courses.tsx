@@ -1,14 +1,50 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Crown, BookOpen, GraduationCap, Languages, Clock, Users, Star } from "lucide-react";
+import { BookOpen, TrendingUp, MessageSquare, Clock, Users, Star, Award, CheckCircle } from "lucide-react";
 
 const courses = [
-  { title: "English Language", icon: Crown, level: "Beginner to Advanced", duration: "12 Weeks", students: "12,500+", rating: 4.9, description: "Master the global language of business, travel, and communication with our comprehensive English program.", popular: true },
-  { title: "Spanish Language", icon: BookOpen, level: "Beginner to Advanced", duration: "10 Weeks", students: "8,200+", rating: 4.8, description: "Dive into one of the world's most spoken languages with immersive lessons and native-speaker practice." },
-  { title: "German Language", icon: GraduationCap, level: "Beginner to Intermediate", duration: "14 Weeks", students: "5,100+", rating: 4.7, description: "Open doors to Europe's largest economy with structured German language courses." },
-  { title: "French Language", icon: Languages, level: "Beginner to Advanced", duration: "10 Weeks", students: "9,800+", rating: 4.9, description: "Learn the language of love, diplomacy, and cuisine with expert French instructors." },
-  { title: "Japanese Language", icon: BookOpen, level: "Beginner to Intermediate", duration: "16 Weeks", students: "3,400+", rating: 4.8, description: "Explore Japanese culture through language, from hiragana to conversational fluency." },
-  { title: "Mandarin Chinese", icon: GraduationCap, level: "Beginner", duration: "16 Weeks", students: "4,600+", rating: 4.7, description: "Learn the most spoken language in the world with our step-by-step Mandarin program." },
+  {
+    title: "Basic Level",
+    icon: BookOpen,
+    level: "For Beginners",
+    duration: "1 Month",
+    students: "20,000+",
+    rating: 4.8,
+    description: "Start your English journey with foundational grammar, basic vocabulary, simple conversations, and pronunciation basics.",
+    features: ["Basic Grammar", "Vocabulary Building", "Pronunciation", "Simple Conversations"],
+    popular: true,
+  },
+  {
+    title: "Intermediate Level",
+    icon: TrendingUp,
+    level: "Some English Knowledge",
+    duration: "1 Month",
+    students: "18,000+",
+    rating: 4.8,
+    description: "Refine your grammar, expand vocabulary, improve everyday conversations, and develop listening comprehension.",
+    features: ["Grammar Refinement", "Expanded Vocabulary", "Listening Skills", "Everyday Conversations"],
+  },
+  {
+    title: "Advanced Level",
+    icon: MessageSquare,
+    level: "Fluent Speakers",
+    duration: "1 Month",
+    students: "12,000+",
+    rating: 4.9,
+    description: "Achieve mastery with fluency development, advanced communication, professional English, and presentation skills.",
+    features: ["Fluency Development", "Professional English", "Presentation Skills", "Interview Prep"],
+  },
+];
+
+const trainingFeatures = [
+  "Certified Programs with official certification",
+  "Online & Offline learning options",
+  "Flexible morning, afternoon & evening batches",
+  "Small groups of 8-12 students per batch",
+  "Interactive lessons with practical exercises",
+  "Regular assessments and progress tracking",
+  "Mobile app for learning on-the-go",
+  "Parent-teacher communication for young learners",
 ];
 
 const Courses = () => {
@@ -20,14 +56,14 @@ const Courses = () => {
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">Our Courses</h1>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Choose from our wide range of language courses designed for every level and learning style.
+            Training for all proficiency levels — from beginners to advanced speakers. Find the program suited to your goals.
           </p>
         </div>
       </section>
 
       <section className="py-20 px-6 bg-background">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {courses.map((course) => (
               <div key={course.title} className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-xl transition-shadow group relative">
                 {course.popular && (
@@ -46,18 +82,65 @@ const Courses = () => {
                 </div>
                 <div className="p-8">
                   <p className="text-muted-foreground text-sm leading-relaxed mb-6">{course.description}</p>
+                  <div className="space-y-2 mb-6">
+                    {course.features.map((f) => (
+                      <div key={f} className="flex items-center gap-2 text-sm text-foreground">
+                        <CheckCircle size={14} className="text-accent" />
+                        {f}
+                      </div>
+                    ))}
+                  </div>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
                     <span className="flex items-center gap-1"><Clock size={14} /> {course.duration}</span>
                     <span className="flex items-center gap-1"><Users size={14} /> {course.students}</span>
                     <span className="flex items-center gap-1"><Star size={14} className="text-accent" /> {course.rating}</span>
                   </div>
-                  <button className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                  <a
+                    href="https://wa.me/918485038383"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full bg-primary text-primary-foreground py-3 rounded-lg font-medium hover:opacity-90 transition-opacity text-center"
+                  >
                     Enroll Now
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Training Features */}
+      <section className="py-20 px-6 bg-card">
+        <div className="container mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-16">Training Features</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {trainingFeatures.map((f) => (
+              <div key={f} className="flex items-start gap-3">
+                <CheckCircle size={18} className="text-accent mt-0.5 shrink-0" />
+                <p className="text-sm text-foreground">{f}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Certification */}
+      <section className="py-20 px-6 bg-background">
+        <div className="container mx-auto max-w-3xl text-center">
+          <Award size={48} className="text-accent mx-auto mb-6" />
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Official Certification</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            Upon successful completion, receive an official certificate from Eagle Spoken English Academy. Each certificate includes your proficiency level, a unique verification ID, and is available in both digital and physical formats — valuable for your career and personal development.
+          </p>
+          <a
+            href="https://wa.me/918485038383"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-accent text-accent-foreground px-8 py-4 rounded-lg text-sm font-semibold tracking-wider uppercase hover:opacity-90 transition-opacity"
+          >
+            Enroll & Get Certified
+          </a>
         </div>
       </section>
 

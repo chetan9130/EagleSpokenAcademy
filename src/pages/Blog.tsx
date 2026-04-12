@@ -3,12 +3,12 @@ import Footer from "@/components/Footer";
 import { Calendar, User, ArrowRight } from "lucide-react";
 
 const posts = [
-  { title: "10 Tips for Learning a New Language Faster", category: "Learning Tips", date: "Mar 15, 2024", author: "Sarah Johnson", excerpt: "Discover proven strategies that can accelerate your language learning journey and help you achieve fluency sooner.", color: "bg-accent/20" },
-  { title: "The Benefits of Being Bilingual in 2024", category: "Research", date: "Mar 10, 2024", author: "Michael Chen", excerpt: "New research reveals the cognitive and career advantages of speaking multiple languages in today's global economy.", color: "bg-secondary/20" },
-  { title: "How to Stay Motivated While Learning a Language", category: "Motivation", date: "Mar 5, 2024", author: "Emma Williams", excerpt: "Staying motivated is one of the biggest challenges in language learning. Here are strategies that actually work.", color: "bg-hero-purple/20" },
-  { title: "Best Apps to Complement Your Language Learning", category: "Technology", date: "Feb 28, 2024", author: "David Park", excerpt: "A curated list of the best language learning apps that can complement your structured learning program.", color: "bg-accent/20" },
-  { title: "Understanding Cultural Context in Language", category: "Culture", date: "Feb 20, 2024", author: "Sarah Johnson", excerpt: "Language is more than words and grammar. Learn why understanding cultural context is key to true fluency.", color: "bg-secondary/20" },
-  { title: "How Our Students Achieved Fluency in 6 Months", category: "Success Stories", date: "Feb 15, 2024", author: "Emma Williams", excerpt: "Real stories from our students who went from complete beginners to confident speakers in just six months.", color: "bg-hero-purple/20" },
+  { title: "10 Tips to Improve Your Spoken English Fast", category: "Learning Tips", date: "Apr 10, 2026", author: "Eagle Academy", excerpt: "Discover proven strategies to accelerate your spoken English skills — from daily practice habits to conversation techniques that actually work.", color: "bg-accent/20" },
+  { title: "Why Practical English Matters More Than Grammar", category: "Methodology", date: "Apr 5, 2026", author: "Eagle Academy", excerpt: "Learn why focusing on real-world communication skills over textbook grammar leads to faster fluency and more confident speaking.", color: "bg-secondary/20" },
+  { title: "How to Prepare for English Job Interviews", category: "Career Tips", date: "Mar 28, 2026", author: "Eagle Academy", excerpt: "Essential English interview preparation tips — from common questions and answers to body language and presentation skills.", color: "bg-hero-purple/20" },
+  { title: "The Benefits of Learning English in Small Groups", category: "Education", date: "Mar 20, 2026", author: "Eagle Academy", excerpt: "Why small batch sizes of 8-12 students create a more effective and supportive learning environment for English learners.", color: "bg-accent/20" },
+  { title: "5 Common English Speaking Mistakes and How to Fix Them", category: "Grammar Tips", date: "Mar 15, 2026", author: "Eagle Academy", excerpt: "The most common errors Indian English learners make and practical techniques to correct them for clearer communication.", color: "bg-secondary/20" },
+  { title: "How Our Students Went from Beginners to Confident Speakers", category: "Success Stories", date: "Mar 10, 2026", author: "Eagle Academy", excerpt: "Real stories from Eagle Academy students who transformed their English communication skills and achieved their career goals.", color: "bg-hero-purple/20" },
 ];
 
 const Blog = () => {
@@ -18,9 +18,9 @@ const Blog = () => {
 
       <section className="bg-primary py-20 px-6">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">Blog</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">Blog & Resources</h1>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Insights, tips, and stories to fuel your language learning journey.
+            English learning tips, grammar guides, and success stories to fuel your language journey.
           </p>
         </div>
       </section>
@@ -34,7 +34,7 @@ const Blog = () => {
                   <span className="text-sm font-bold tracking-widest text-foreground/60 uppercase">{post.category}</span>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-foreground mb-3 group-hover:text-secondary transition-colors">{post.title}</h3>
+                  <h3 className="text-lg font-bold text-foreground mb-3 group-hover:text-accent transition-colors">{post.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-4">{post.excerpt}</p>
                   <div className="flex items-center justify-between text-xs text-muted-foreground">
                     <div className="flex items-center gap-3">
