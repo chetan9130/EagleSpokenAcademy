@@ -1,17 +1,25 @@
+import { Users, Star, Award, Clock } from "lucide-react";
+
+const stats = [
+  { label: "Students Trained", value: "50,000+", icon: Users },
+  { label: "Student Rating", value: "4.8/5", icon: Star },
+  { label: "Certified Programs", value: "100%", icon: Award },
+  { label: "Years of Experience", value: "15+", icon: Clock },
+];
+
 const TrustedSection = () => {
-  const logos = ["Google", "Amazon", "Microsoft", "Spotify", "Slack"];
-  
   return (
-    <section className="py-16 bg-card">
-      <div className="container mx-auto px-6 md:px-12 text-center">
-        <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-12">
-          Trusted by 65,000 students<br />across the world.
-        </h2>
-        <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-40">
-          {logos.map((logo) => (
-            <span key={logo} className="text-2xl font-bold text-foreground tracking-wider">
-              {logo}
-            </span>
+    <section className="py-16 bg-primary">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <div className="w-14 h-14 mx-auto mb-3 rounded-full bg-primary-foreground/10 flex items-center justify-center">
+                <stat.icon size={24} className="text-accent" />
+              </div>
+              <p className="text-3xl md:text-4xl font-bold text-primary-foreground">{stat.value}</p>
+              <p className="text-sm text-primary-foreground/60 mt-1">{stat.label}</p>
+            </div>
           ))}
         </div>
       </div>
