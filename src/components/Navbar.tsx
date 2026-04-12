@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Search } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
@@ -17,8 +17,8 @@ const Navbar = () => {
   return (
     <nav className="bg-card py-4 px-6 md:px-12 flex items-center justify-between sticky top-0 z-50 shadow-sm">
       <Link to="/" className="flex items-center gap-2">
-        <span className="text-2xl">🌍</span>
-        <span className="font-heading text-xl font-bold tracking-[0.25em] text-foreground">LEARN</span>
+        <span className="text-2xl">🦅</span>
+        <span className="font-heading text-xl font-bold tracking-wider text-foreground">EAGLE</span>
       </Link>
 
       <div className="hidden md:flex items-center gap-8">
@@ -28,16 +28,21 @@ const Navbar = () => {
             to={link.path}
             className={`text-sm font-medium tracking-widest transition-colors ${
               location.pathname === link.path
-                ? "text-secondary"
+                ? "text-accent"
                 : "text-foreground hover:text-muted-foreground"
             }`}
           >
             {link.label}
           </Link>
         ))}
-        <button className="text-foreground hover:text-muted-foreground transition-colors">
-          <Search size={18} />
-        </button>
+        <a
+          href="https://wa.me/918485038383"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
+        >
+          <Phone size={14} /> WhatsApp Us
+        </a>
       </div>
 
       <button
@@ -56,13 +61,21 @@ const Navbar = () => {
               onClick={() => setMobileOpen(false)}
               className={`px-6 py-3 text-sm font-medium tracking-widest transition-colors ${
                 location.pathname === link.path
-                  ? "text-secondary bg-muted"
+                  ? "text-accent bg-muted"
                   : "text-foreground hover:bg-muted"
               }`}
             >
               {link.label}
             </Link>
           ))}
+          <a
+            href="https://wa.me/918485038383"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mx-6 mt-3 flex items-center justify-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-lg text-sm font-semibold"
+          >
+            <Phone size={14} /> WhatsApp Us
+          </a>
         </div>
       )}
     </nav>
