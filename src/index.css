@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,46 +6,46 @@
 
 @layer base {
   :root {
-    --background: 210 33% 97%;
-    --foreground: 220 26% 14%;
+    --background: 210 20% 96%;
+    --foreground: 0 0% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 26% 14%;
+    --card-foreground: 0 0% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 26% 14%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 220 56% 15%;
-    --primary-foreground: 210 33% 97%;
+    --primary: 214 56% 40%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 197 71% 73%;
-    --secondary-foreground: 220 56% 15%;
+    --secondary: 207 40% 47%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 210 20% 93%;
-    --muted-foreground: 220 10% 46%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 43 96% 56%;
-    --accent-foreground: 220 56% 15%;
+    --accent: 27 100% 63%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 220 56% 15%;
+    --ring: 214 56% 40%;
 
     --radius: 0.75rem;
 
-    --hero-bg: 207 47% 94%;
-    --hero-teal: 197 71% 73%;
-    --hero-gold: 43 96% 56%;
-    --hero-purple: 270 50% 60%;
+    --hero-bg: 214 60% 95%;
+    --hero-teal: 207 40% 47%;
+    --hero-gold: 27 100% 63%;
+    --hero-purple: 214 56% 40%;
 
-    --section-light: 210 33% 97%;
-    --section-dark: 220 56% 15%;
+    --section-light: 210 20% 96%;
+    --section-dark: 214 56% 25%;
 
-    --testimonial-bg: 220 56% 15%;
-    --testimonial-fg: 210 33% 97%;
+    --testimonial-bg: 214 56% 20%;
+    --testimonial-fg: 0 0% 100%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

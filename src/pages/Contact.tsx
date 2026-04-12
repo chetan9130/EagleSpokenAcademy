@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Instagram, Facebook, Youtube } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -26,7 +26,7 @@ const Contact = () => {
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">Contact Us</h1>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Have questions? We'd love to hear from you.
+            Have questions? We'd love to hear from you. Reach us through any of the channels below.
           </p>
         </div>
       </section>
@@ -35,17 +35,31 @@ const Contact = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {[
-              { icon: Mail, title: "Email Us", info: "hello@learn.com" },
-              { icon: Phone, title: "Call Us", info: "+1 (555) 123-4567" },
-              { icon: MapPin, title: "Visit Us", info: "123 Learning St, San Francisco, CA" },
+              { icon: Phone, title: "Phone / WhatsApp", info: "+91 8485038383", link: "https://wa.me/918485038383" },
+              { icon: Mail, title: "Email Us", info: "eaglespokenenglish@gmail.com", link: "mailto:eaglespokenenglish@gmail.com" },
+              { icon: MapPin, title: "Our Locations", info: "Chakan, Ichalkaranji & more", link: "#" },
             ].map((item) => (
-              <div key={item.title} className="bg-card border border-border rounded-xl p-8 text-center">
+              <a key={item.title} href={item.link} target={item.link.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="bg-card border border-border rounded-xl p-8 text-center hover:shadow-lg transition-shadow block">
                 <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-accent/20 flex items-center justify-center">
                   <item.icon size={24} className="text-accent" />
                 </div>
                 <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.info}</p>
-              </div>
+              </a>
+            ))}
+          </div>
+
+          {/* Social Media */}
+          <div className="flex justify-center gap-4 mb-16">
+            {[
+              { icon: Instagram, label: "@eagle_spoken_english", href: "https://www.instagram.com/eagle_spoken_english" },
+              { icon: Facebook, label: "Facebook", href: "#" },
+              { icon: Youtube, label: "YouTube", href: "#" },
+            ].map((s) => (
+              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-card border border-border rounded-lg px-4 py-3 hover:shadow-md transition-shadow text-sm text-foreground">
+                <s.icon size={18} className="text-accent" />
+                {s.label}
+              </a>
             ))}
           </div>
 
