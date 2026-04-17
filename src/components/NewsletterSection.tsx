@@ -11,7 +11,7 @@ const NewsletterSection = () => {
           Start Your English Journey Today
         </h2>
         <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-          Join 50,000+ successful students. Contact us on WhatsApp or subscribe for English learning tips and updates.
+          Join 5,000+ successful students. Contact us on WhatsApp or subscribe for English learning tips and updates.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <a
@@ -20,7 +20,7 @@ const NewsletterSection = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-lg text-sm font-semibold tracking-wider uppercase hover:opacity-90 transition-opacity"
           >
-            <Phone size={18} /> WhatsApp: +91 8485038383
+            <Phone size={18} /> WhatsApp: +91 8087432410
           </a>
         </div>
         <form

@@ -1,10 +1,10 @@
 import { Users, Star, Award, Clock } from "lucide-react";
 
 const stats = [
-  { label: "Students Trained", value: "50,000+", icon: Users },
+  { label: "Students Trained", value: "5,000+", icon: Users },
   { label: "Student Rating", value: "4.8/5", icon: Star },
   { label: "Certified Programs", value: "100%", icon: Award },
-  { label: "Years of Experience", value: "15+", icon: Clock },
+  { label: "Years of Experience", value: "12+", icon: Clock },
 ];
 
 const TrustedSection = () => {

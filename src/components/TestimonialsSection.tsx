@@ -20,7 +20,7 @@ const TestimonialsSection = () => {
           What our students<br />say about us
         </h2>
         <p className="text-center text-testimonial-fg/60 max-w-xl mx-auto mb-16">
-          Hear from our 50,000+ students who transformed their English communication skills at Eagle Spoken English Academy.
+          Hear from our 5,000+ students who transformed their English communication skills at Eagle Spoken English Academy.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

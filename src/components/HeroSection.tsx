@@ -15,7 +15,7 @@ const HeroSection = () => {
           </div>
 
           <img
-            src={heroPerson}
+            src="/rahul-removebg-preview.png"
             alt="Eagle Spoken English Academy student"
             width={800}
             height={900}
@@ -28,7 +28,7 @@ const HeroSection = () => {
               <Users className="text-accent" size={20} />
             </div>
             <div>
-              <p className="text-sm font-semibold text-foreground">50,000+ Students</p>
+              <p className="text-sm font-semibold text-foreground">5,000+ Students</p>
               <p className="text-xs text-muted-foreground">Trained successfully</p>
             </div>
           </div>
@@ -52,21 +52,21 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="https://wa.me/918485038383"
+              href="https://wa.me/918087432410?text=I%20want%20to%20enroll%20in%20a%20course"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-accent text-accent-foreground px-8 py-4 text-sm font-semibold tracking-[0.2em] uppercase hover:opacity-90 transition-opacity rounded-lg"
             >
               ENROLL NOW
             </a>
-            <a
-              href="https://wa.me/918485038383?text=I%20want%20to%20book%20a%20free%20demo%20class"
+            {/* <a
+              href="https://wa.me/918087432410?text=I%20want%20to%20book%20a%20free%20demo%20class"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block border-2 border-primary text-primary px-8 py-4 text-sm font-semibold tracking-[0.2em] uppercase hover:bg-primary hover:text-primary-foreground transition-colors rounded-lg"
             >
               FREE DEMO CLASS
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
