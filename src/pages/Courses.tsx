@@ -7,9 +7,7 @@ const courses = [
     title: "Basic Level",
     icon: BookOpen,
     level: "For Beginners",
-    duration: "1 Month",
-    students: "20,000+",
-    rating: 4.8,
+   
     description: "Start your English journey with foundational grammar, basic vocabulary, simple conversations, and pronunciation basics.",
     features: ["Basic Grammar", "Vocabulary Building", "Pronunciation", "Simple Conversations"],
     popular: true,
@@ -18,9 +16,7 @@ const courses = [
     title: "Intermediate Level",
     icon: TrendingUp,
     level: "Some English Knowledge",
-    duration: "1 Month",
-    students: "18,000+",
-    rating: 4.8,
+   
     description: "Refine your grammar, expand vocabulary, improve everyday conversations, and develop listening comprehension.",
     features: ["Grammar Refinement", "Expanded Vocabulary", "Listening Skills", "Everyday Conversations"],
   },
@@ -28,16 +24,14 @@ const courses = [
     title: "Advanced Level",
     icon: MessageSquare,
     level: "Fluent Speakers",
-    duration: "1 Month",
-    students: "12,000+",
-    rating: 4.9,
+   
     description: "Achieve mastery with fluency development, advanced communication, professional English, and presentation skills.",
     features: ["Fluency Development", "Professional English", "Presentation Skills", "Interview Prep"],
   },
 ];
 
 const trainingFeatures = [
-  "Certified Programs with official certification",
+  
   "Online & Offline learning options",
   "Flexible morning, afternoon & evening batches",
   "Small groups of 8-12 students per batch",
@@ -90,11 +84,7 @@ const Courses = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
-                    <span className="flex items-center gap-1"><Clock size={14} /> {course.duration}</span>
-                    <span className="flex items-center gap-1"><Users size={14} /> {course.students}</span>
-                    <span className="flex items-center gap-1"><Star size={14} className="text-accent" /> {course.rating}</span>
-                  </div>
+                 
                   <a
                     href="https://wa.me/918485038383"
                     target="_blank"
@@ -126,7 +116,7 @@ const Courses = () => {
       </section>
 
       {/* Certification */}
-      <section className="py-20 px-6 bg-background">
+      {/* <section className="py-20 px-6 bg-background">
         <div className="container mx-auto max-w-3xl text-center">
           <Award size={48} className="text-accent mx-auto mb-6" />
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Official Certification</h2>
@@ -142,7 +132,7 @@ const Courses = () => {
             Enroll & Get Certified
           </a>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

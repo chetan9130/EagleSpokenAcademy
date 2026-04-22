@@ -177,25 +177,7 @@ const About = () => {
       </section>
 
       {/* Stats */}
-      <section className="py-20 px-6 bg-primary">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary-foreground/10 flex items-center justify-center">
-                  <stat.icon size={28} className="text-accent" />
-                </div>
-                <p className="text-3xl font-bold text-primary-foreground">
-                  {stat.value}
-                </p>
-                <p className="text-sm text-primary-foreground/60 mt-1">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* Who Can Join */}
       <section className="py-20 px-6 bg-card">

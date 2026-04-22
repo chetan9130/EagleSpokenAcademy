@@ -1,7 +1,7 @@
 import { BookOpen, Users, Award, ShieldCheck } from "lucide-react";
 
 const benefits = [
-  { title: "Certified Programs", icon: Award, description: "Earn recognized certificates upon course completion, valuable for your career and personal development." },
+ 
   { title: "Small Batch Sizes", icon: Users, description: "Personalized attention with only 8-12 students per batch for maximum interaction and learning." },
   { title: "Flexible Timings", icon: BookOpen, description: "Choose from morning, afternoon, or evening batches — online or offline to fit your schedule." },
   { title: "Practical Focus", icon: ShieldCheck, description: "Real-world communication skills through interactive lessons, role plays, and group discussions." },
@@ -18,7 +18,7 @@ const BenefitsSection = () => {
           Training designed for<br />maximum results
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((b) => (
             <div key={b.title} className="text-center group">
               <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-hero-bg flex items-center justify-center group-hover:bg-accent transition-colors">

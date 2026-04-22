@@ -4,7 +4,7 @@ const MasterSection = () => {
       <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
         <div className="w-full md:w-1/2">
           <div className="bg-primary rounded-2xl p-12 text-primary-foreground">
-            <p className="text-6xl md:text-8xl font-heading font-bold mb-2">50K+</p>
+            <p className="text-6xl md:text-8xl font-heading font-bold mb-2">5K+</p>
             <p className="text-sm tracking-widest uppercase opacity-80">students trained successfully</p>
           </div>
         </div>
@@ -16,7 +16,7 @@ const MasterSection = () => {
             English for Everyone
           </h2>
           <p className="text-muted-foreground mb-8 leading-relaxed">
-            With over 50,000 students trained, Eagle Spoken English Academy is one of the leading spoken English academies in the region. Our students have gained confidence, improved their communication skills, and achieved their career goals.
+            With over 5,000 students trained, Eagle Spoken English Academy is one of the leading spoken English academies in the region. Our students have gained confidence, improved their communication skills, and achieved their career goals.
           </p>
           <a
             href="https://wa.me/918485038383"
