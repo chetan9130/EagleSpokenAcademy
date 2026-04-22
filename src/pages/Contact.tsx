@@ -57,7 +57,10 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Our Locations",
-      info: [ "Eagle Spoken English Academy, vedant sankul, Manik Chowk, Chakan, Maharashtra 410501" ,"\nEagle Spoken English Academy,Appaji Complex, near MIT college, Vishweshwar Nagar, Tapkir Nagar, Alandi, Pimpri-Chinchwad, Alandi, Maharashtra 412105"],
+      info: [
+        "Add1 - Eagle Spoken English Academy, Vedant Sankul, Manik Chowk, Chakan, Maharashtra 410501",
+        "Add2 - Eagle Spoken English Academy, Appaji Complex, near MIT College, Vishweshwar Nagar, Tapkir Nagar, Alandi, Pimpri-Chinchwad, Maharashtra 412105",
+      ],
       link: "#",
     },
   ];
@@ -81,7 +84,7 @@ const Contact = () => {
       <section className="py-20 px-6 bg-background">
         <div className="container mx-auto">
 
-          {/* ✅ Contact Cards FIXED */}
+          {/* ✅ Contact Cards */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {contactItems.map((item) => (
               <a
@@ -94,12 +97,27 @@ const Contact = () => {
                 <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-accent/20 flex items-center justify-center">
                   <item.icon size={24} className="text-accent" />
                 </div>
+
                 <h3 className="font-bold text-foreground mb-2">
                   {item.title}
                 </h3>
-                <p className="text-sm text-muted-foreground">
-                  {item.info}
-                </p>
+
+                {/* 🔥 FIXED WITH ICON PER LINE */}
+                <div className="text-sm text-muted-foreground space-y-2">
+                  {Array.isArray(item.info) ? (
+                    item.info.map((line, index) => (
+                      <div
+                        key={index}
+                        className="flex items-start gap-2 justify-center"
+                      >
+                        <MapPin size={16} className="mt-1 text-accent" />
+                        <span>{line}</span>
+                      </div>
+                    ))
+                  ) : (
+                    <p>{item.info}</p>
+                  )}
+                </div>
               </a>
             ))}
           </div>
@@ -150,19 +168,21 @@ const Contact = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.665121691628!2d73.8611054!3d18.753487600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c970bb144c27%3A0x81284b6e6667d634!2sEagle%20Spoken%20English%20Academy!5e1!3m2!1sen!2sin!4v1776452057831!5m2!1sen!2sin"
                 width="100%"
-                height="400"  
+                height="400"
                 style={{ border: 0 }}
                 loading="lazy"
-                title="Google Map"
+                title="Google Map 1"
               ></iframe>
-<br />
+
+              <br />
+
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.4066581164516!2d73.8907147!3d18.6720342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c9f8981978d5%3A0xa52d9e83f401d583!2sEagle%20Spoken%20English%20Academy!5e1!3m2!1sen!2sin!4v1776452565865!5m2!1sen!2sin"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
                 loading="lazy"
-                title="Google Map"
+                title="Google Map 2"
               ></iframe>
             </div>
           </div>
