@@ -50,7 +50,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm opacity-60">
               <li className="flex items-center gap-2">
                 <Phone size={14} />
-                <a href="tel:+918087432410" className="hover:opacity-100 transition-opacity">+91 8087432410</a>
+                <a href="tel:+919765699626" className="hover:opacity-100 transition-opacity">+91 97656 99626</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={14} />
@@ -63,9 +63,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        {/* <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-center text-xs opacity-40">
-          © 2024 Eagle Spoken English Academy. All rights reserved.
-        </div> */}
+        <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-center text-xs opacity-40">
+          © 2024 Krish NextGen Tech. All rights reserved.
+        </div>
       </div>
     </footer>
   );

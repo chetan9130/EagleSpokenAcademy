@@ -86,7 +86,7 @@ const Courses = () => {
                   </div>
                  
                   <a
-                    href="https://wa.me/918485038383"
+                    href="https://wa.me/919765699626"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-primary text-primary-foreground py-3 rounded-lg font-medium hover:opacity-90 transition-opacity text-center"
@@ -124,7 +124,7 @@ const Courses = () => {
             Upon successful completion, receive an official certificate from Eagle Spoken English Academy. Each certificate includes your proficiency level, a unique verification ID, and is available in both digital and physical formats — valuable for your career and personal development.
           </p>
           <a
-            href="https://wa.me/918485038383"
+            href="https://wa.me/919765699626"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-accent text-accent-foreground px-8 py-4 rounded-lg text-sm font-semibold tracking-wider uppercase hover:opacity-90 transition-opacity"

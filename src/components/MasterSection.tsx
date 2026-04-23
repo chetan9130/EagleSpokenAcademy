@@ -19,7 +19,7 @@ const MasterSection = () => {
             With over 5,000 students trained, Eagle Spoken English Academy is one of the leading spoken English academies in the region. Our students have gained confidence, improved their communication skills, and achieved their career goals.
           </p>
           <a
-            href="https://wa.me/918485038383"
+            href="https://wa.me/919765699626"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border-2 border-primary text-primary px-8 py-3 text-sm font-semibold tracking-widest uppercase hover:bg-primary hover:text-primary-foreground transition-colors rounded-lg"

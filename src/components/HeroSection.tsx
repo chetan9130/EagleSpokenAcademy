@@ -52,7 +52,7 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="https://wa.me/918087432410?text=I%20want%20to%20enroll%20in%20a%20course"
+              href="https://wa.me/919765699626?text=I%20want%20to%20enroll%20in%20a%20course"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-accent text-accent-foreground px-8 py-4 text-sm font-semibold tracking-[0.2em] uppercase hover:opacity-90 transition-opacity rounded-lg"
@@ -60,7 +60,7 @@ const HeroSection = () => {
               ENROLL NOW
             </a>
             {/* <a
-              href="https://wa.me/918087432410?text=I%20want%20to%20book%20a%20free%20demo%20class"
+              href="https://wa.me/919765699626?text=I%20want%20to%20book%20a%20free%20demo%20class"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block border-2 border-primary text-primary px-8 py-4 text-sm font-semibold tracking-[0.2em] uppercase hover:bg-primary hover:text-primary-foreground transition-colors rounded-lg"

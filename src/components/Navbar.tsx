@@ -40,7 +40,7 @@ const Navbar = () => {
           </Link>
         ))}
         <a
-          href="https://wa.me/918087432410?text=I%20want%20to%20enroll%20in%20a%20course"
+          href="https://wa.me/919765699626?text=I%20want%20to%20enroll%20in%20a%20course"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
@@ -73,7 +73,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a
-            href="https://wa.me/918087432410?text=I%20want%20to%20book%20a%20free%20demo%20class"
+            href="https://wa.me/919765699626?text=I%20want%20to%20book%20a%20free%20demo%20class"
             target="_blank"
             rel="noopener noreferrer"
             className="mx-6 mt-3 flex items-center justify-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-lg text-sm font-semibold"

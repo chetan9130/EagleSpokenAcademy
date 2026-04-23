@@ -46,7 +46,7 @@ const LearnAnywhereSection = () => {
             </p>
 
             <a
-              href="https://wa.me/918087432410?text=I%20want%20to%20enroll%20in%20a%20course"
+              href="https://wa.me/919765699626?text=I%20want%20to%20enroll%20in%20a%20course"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-primary text-primary-foreground px-8 py-4 text-sm font-semibold tracking-[0.2em] uppercase hover:opacity-90 transition-opacity rounded-lg"
